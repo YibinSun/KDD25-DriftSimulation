@@ -20,8 +20,12 @@ We provide three types of drift simulation methods:
 Please see the `drifting_functions.py` for more details.
 
 ## 4. Examples
-We provide generated datasets with different types of drifts and different source of real-world datasets in `new_generated_datasets`.
+All the simulated datasets used in our work are situated at https://www.dropbox.com/scl/fi/rwwouroqnor3bbogci67g/new_generated_datasets.zip?rlkey=7burrlqe61l6zpugxec4o15ls&st=qajfq15k&dl=0
+
+We are not including them into the repository due to the size of the files.
 Furthermore, if you are keen on generating your own dataset, please see the `generateing.py` for more details.
+
+`experiment_exampe.ipynb` provides an example of the experiment pipeline, including Regression and Prediction Interval tasks.
 
 ## Cite Us
 If you use the code or the datasets in your research, please cite us as follows:
