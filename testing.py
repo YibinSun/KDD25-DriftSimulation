@@ -30,7 +30,7 @@ feature_values = processed_df[feature]
 target_values = processed_df['cnt']
 
 # Create a figure with two subplots
-fig, axes = plt.subplots(1, 2, figsize=(12, 3))  # 1 row, 2 columns
+fig, axes = plt.subplots(1, 2, figsize=(12, 3), dpi=300)  # 1 row, 2 columns
 
 # Left subplot for 'feature'
 sns.lineplot(x=x, y=feature_values, linewidth=0.5, ax=axes[0], color='#17becf')
@@ -46,7 +46,7 @@ axes[1].set_ylabel('Values')
 
 # Save and show plot
 plt.tight_layout()  # Ensures everything fits without overlap
-# plt.savefig('./test_incremental_drift_side_by_side.png')
+plt.savefig('/Users/spencer/Desktop/test_incremental_drift_side_by_side.pdf')
 plt.show()
 
 

@@ -97,7 +97,6 @@ abalone_concept_1 = models[0].sample(50000)
 abalone_concept_2 = models[1].sample(50000)
 abalone_concept_3 = models[2].sample(50000)
 abalone_concept_4 = models[3].sample(50000)
-# abalone_model = CTGANSynthesizer.load('./trained_models/ctgan_abalone.pkl')
 
 # abalone_concept_1 = generate_conditional_synthetic_data(
 #     simulate_shifted_distribution(drifting_data, (feature_max - feature_mean) / 4),

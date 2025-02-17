@@ -16,6 +16,3 @@ origins = {
 
 for key in origins:
     model = train_ctgan(origins[key], epochs=300, batch_size=500, generator_lr=1e-3, discriminator_lr=1e-3, save_path=f'./trained_models/ctgan_{key}.pkl')
-
-# model1 = train_ctgan(data_path1, epochs=300, batch_size=500, generator_lr=1e-3, discriminator_lr=1e-3, save_path=f'./trained_models/ctgan_{data_path1.split("/")[-1].split(".")[0]}.pkl')
-# model2 = train_ctgan(data_path2, epochs=300, batch_size=500, generator_lr=1e-3, discriminator_lr=1e-3, save_path=f'./trained_models/ctgan_{data_path2.split("/")[-1].split(".")[0]}.pkl')
